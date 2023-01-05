@@ -4,6 +4,7 @@
 	//* Navbar Fixed
 	const header = document.querySelector('.header');
 	const logo = document.querySelector('.logo-principal');
+	const mediaQuery = window.matchMedia('(max-width: 500px)');
 
 	function agregarClase() {
 		header.classList.add('.navbar_fixed');
@@ -20,7 +21,6 @@
 			removerClase();
 		}
 	});
-	const mediaQuery = window.matchMedia('(max-width: 641px)');
 
 	if (mediaQuery.matches) {
 		agregarClase();
