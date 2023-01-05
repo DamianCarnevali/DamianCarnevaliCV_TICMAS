@@ -4,7 +4,7 @@
 	//* Navbar Fixed
 	const header = document.querySelector('.header');
 	const logo = document.querySelector('.logo-principal');
-	const mediaQuery = window.matchMedia('(max-width: 400px)');
+	const mediaQuery = window.matchMedia('(max-width: 200px)');
 
 	function agregarClase() {
 		header.classList.add('.navbar_fixed');
