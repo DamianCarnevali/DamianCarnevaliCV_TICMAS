@@ -23,9 +23,9 @@
 	});
 
 	if (mediaQuery.matches) {
-		agregarClase();
+		logo.src = './img/logo2.png';
 	} else {
-		removerClase();
+		logo.src = './img/logo.png';
 	}
 
 })(jQuery);
