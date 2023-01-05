@@ -4,7 +4,7 @@
 	//* Navbar Fixed
 	const header = document.querySelector('.header');
 	const logo = document.querySelector('.logo-principal');
-	const mediaQuery = window.matchMedia('(max-width: 200px)');
+	const mediaQuery = window.matchMedia('(max-width: 992px)');
 
 	function agregarClase() {
 		header.classList.add('.navbar_fixed');
@@ -15,7 +15,7 @@
 		logo.src = './img/logo.png';
 	}
 	window.addEventListener('resize', function () {
-		if (this.window.innerWidth < 991) {
+		if (this.window.innerWidth < 992) {
 			agregarClase();
 		} else {
 			removerClase();
