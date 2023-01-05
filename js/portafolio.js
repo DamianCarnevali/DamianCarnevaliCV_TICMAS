@@ -20,5 +20,12 @@
 			removerClase();
 		}
 	});
+	const mediaQuery = window.matchMedia('(max-width: 641px)');
+
+	if (mediaQuery.matches) {
+		agregarClase();
+	} else {
+		removerClase();
+	}
 
 })(jQuery);
