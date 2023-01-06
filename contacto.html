@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" href="./img/favicon.ico" type="image/ico">
+    <title>Portafolio</title>
+    <!-- SEO-->
+    <meta name="description"
+        content="Portafolio - CV creado para la capacitación de Argentina Programa 4.0 en la plataforma de TICMAS bajo el curso 'Primeros pasos del desarrollo frontend'">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Portafolio, TICMAS, Argentina Programa 4.0, CV">
+    <meta name="copyright" content="Damián Carnevali">
+    <meta name="language" content="ES">
+    <meta name="author" content="Damián Carnevali, damiancarnevali@hotmail.com">
+
+    <!--Redes Sociales-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Portafolio">
+    <meta property="og:description"
+        content="Portafolio - CV creado para la capacitación de Argentina Programa 4.0 en la plataforma de TICMAS bajo el curso 'Primeros pasos del desarrollo frontend'">
+    <meta property="og:image" content="./img/favicon.ico">
+    <meta property="og:url" content="permalink">
+
+    <!--Reseteo de estilos-->
+    <link type="text/css" rel="stylesheet" href="./css/normalize.min.css">
+    <!-- Bootstrap CSS-->
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.css">
+    <!-- FontAwesome CSS-->
+    <link type="text/css" rel="stylesheet" href="./css/font-awesome.min.css">
+    <!-- CSS dedicado-->
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Header-->
+    <header class="header">
+        <div class="menu_principal">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+                <div class="container">
+                    <a class="navbar-brand logo" href="./index.html"><img class="logo-principal" src="./img/logo.png"
+                            alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContenido"
+                        aria-controls="navbarContenido" aria-expanded="false" aria-label="Menú de navegación">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse offset" id="navbarContenido">
+                        <ul class="nav navbar-nav menu_nav justify-content-end">
+                            <li class="nav-item active"><a class="nav-link" href="./index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./presentacion.html">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./experiencia.html">Experiencia</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./habilidades.html">Habilidades</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./educacion.html">Educación</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Fin Header-->
+
+    <!-- Introducción-->
+    <section class="introduccion-paginas">
+        <div class="interno-introduccion-paginas d-flex align-items-center">
+            <div class="container">
+                <div class="contenido-introduccion-paginas text-center">
+                    <h2>Contáctame</h2>
+                    <div class="paginas_link">
+                        <a href="./index.html">Inicio</a>
+                        <a href="./contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fin Introducción-->
+
+    <!--Contacto-->
+    <section class="contact_area section_gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="informacion_contacto">
+                        <div class="info_item">
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+                            <h6>Hablemos de tu proyecto</h6>
+                            <p>Envía tu consulta a través del formulario a continuación</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <form class="row formulario_contacto" novalidate="novalidate"
+                        action="https://formsubmit.co/el/hisipo" method="POST">
+                        <div class="col-md-6">
+                            <div class="form-group grupos-formulario">
+                                <input type="text" class="form-control controles_formulario" name="nombre"
+                                    placeholder="Ingrese su nombre">
+                            </div>
+                            <div class="grupos-formulario">
+                                <input type="email" class="form-control controles_formulario" name="email"
+                                    placeholder="Ingrese su correo electrónico">
+                            </div>
+                            <div class="grupos-formulario">
+                                <input type="text" class="form-control controles_formulario" name="asunto"
+                                    placeholder="Ingrese el asunto">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="grupos-formulario">
+                                <textarea class="form-control controles_formulario" name="mensaje" rows="1"
+                                    placeholder="Ingrese su mensaje"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-right">
+                            <button type="submit" value="Enviar" class="primary_btn">
+                                <span>Enviar mensaje</span>
+                            </button>
+                        </div>
+                        <input type="hidden" name="_next"
+                            value="https://damiancarnevali.github.io/DamianCarnevaliCV_TICMAS/index.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin Contacto-->
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="footer_top flex-column">
+                        <div class="footer_logo">
+                            <a href="./index.html">
+                                <img src="./img/logo-footer.png" alt="Logo">
+                            </a>
+                            <h4>Sígueme</h4>
+                        </div>
+                        <div class="footer_social">
+                            <a href="https://www.facebook.com/nemevaldezz"><i class="fa fa-facebook"></i></a>
+                            <a href="https://twitter.com/DamianCarnevali"><i class="fa fa-twitter"></i></a>
+                            <a href="https://github.com/DamianCarnevali"><i class="fa fa-github"></i></a>
+                            <a href="https://www.instagram.com/nemevaldez/"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer_abajo justify-content-center">
+                <p class="col-lg-8 col-sm-12 footer-text">
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Este
+                    sitio
+                    fue realizado <i class="fa fa-heart-o" aria-hidden="true"></i> por <a
+                        href="https://damiancarnevali.github.io/DamianCarnevaliCV_TICMAS/" target="_blank">Damián
+                        Carnevali</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--Fin Footer-->
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/portafolio.js"></script>
+</body>
+
+</html>

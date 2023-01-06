@@ -50,7 +50,7 @@ a:focus {
   box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
 }
 .primary_btn span {
-  padding: 0 42px;
+  padding: 0 40px;
 }
 .primary_btn.tr-bg {
   background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
@@ -72,17 +72,26 @@ a:focus {
   background-clip: border-box;
 }
 
+.gradient-color, .informacion_contacto .info_item i {
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  background-clip: text;
+  background-color: transparent;
+  color: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .header {
   position: absolute;
   width: 100%;
   z-index: 9999;
-  background: #ffffff;
+  background: transparent;
 }
 .header .menu_nav {
   width: 100%;
 }
 .header .navbar {
-  background: transparent;
+  background: #ffffff;
   padding: 0px;
   border: 0px;
   border-radius: 0px;
@@ -425,4 +434,154 @@ a:focus {
   .footer {
     padding: 70px 0px;
   }
+}
+.introduccion-paginas {
+  position: relative;
+  z-index: 1;
+  min-height: 485px;
+}
+@media (max-width: 1199px) {
+  .introduccion-paginas {
+    min-height: 350px;
+  }
+}
+.introduccion-paginas .interno-introduccion-paginas {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 485px;
+  background: url(../img/banner/accesorio-banner.png) no-repeat right bottom;
+  background-size: 90% 85%;
+  width: 98%;
+  z-index: 1;
+}
+@media (max-width: 1199px) {
+  .introduccion-paginas .interno-introduccion-paginas {
+    min-height: 350px;
+  }
+}
+@media (max-width: 991px) {
+  .introduccion-paginas .interno-introduccion-paginas {
+    background: #854fee;
+    width: 100%;
+  }
+}
+.introduccion-paginas .interno-introduccion-paginas .contenido-introduccion-paginas {
+  margin-left: 50px;
+  margin-top: 100px;
+}
+@media (max-width: 991px) {
+  .introduccion-paginas .interno-introduccion-paginas .contenido-introduccion-paginas {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+}
+.introduccion-paginas .interno-introduccion-paginas .contenido-introduccion-paginas h2 {
+  color: #fff;
+  font-size: 50px;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media (max-width: 991px) {
+  .introduccion-paginas .interno-introduccion-paginas .contenido-introduccion-paginas h2 {
+    font-size: 30px;
+  }
+}
+.introduccion-paginas .interno-introduccion-paginas .contenido-introduccion-paginas .paginas_link a {
+  font-size: 14px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin-right: 20px;
+  position: relative;
+}
+.introduccion-paginas .interno-introduccion-paginas .contenido-introduccion-paginas .paginas_link a:before {
+  content: "-";
+  position: absolute;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.introduccion-paginas .interno-introduccion-paginas .contenido-introduccion-paginas .paginas_link a:last-child {
+  margin-right: 0px;
+}
+.introduccion-paginas .interno-introduccion-paginas .contenido-introduccion-paginas .paginas_link a:last-child:before {
+  display: none;
+}
+
+.section_gap {
+  padding: 200px 0;
+}
+@media (max-width: 1199px) {
+  .section_gap {
+    padding: 80px 0;
+  }
+}
+
+.informacion_contacto .info_item {
+  position: relative;
+  padding-left: 45px;
+}
+.informacion_contacto .info_item i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.informacion_contacto .info_item h6 {
+  font-size: 16px;
+  line-height: 24px;
+  color: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: #000000;
+}
+.informacion_contacto .info_item h6 a {
+  color: #000000;
+}
+.informacion_contacto .info_item p {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 2px 0px;
+}
+
+.formulario_contacto .grupos-formulario {
+  margin-bottom: 10px;
+}
+.formulario_contacto .grupos-formulario .controles_formulario {
+  font-size: 13px;
+  line-height: 26px;
+  color: #999;
+  border: 1px solid #eeeeee;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+.formulario_contacto .grupos-formulario .controles_formulario:focus {
+  box-shadow: none;
+  outline: none;
+}
+.formulario_contacto .grupos-formulario .controles_formulario.placeholder {
+  color: #999;
+}
+.formulario_contacto .grupos-formulario .controles_formulario:-moz-placeholder {
+  color: #999;
+}
+.formulario_contacto .grupos-formulario .controles_formulario::-moz-placeholder {
+  color: #999;
+}
+.formulario_contacto .grupos-formulario .controles_formulario::-webkit-input-placeholder {
+  color: #999;
+}
+.formulario_contacto .grupos-formulario textarea {
+  resize: none;
+}
+.formulario_contacto .grupos-formulario textarea.controles_formulario {
+  height: 134px;
+}
+.formulario_contacto .primary_btn {
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
