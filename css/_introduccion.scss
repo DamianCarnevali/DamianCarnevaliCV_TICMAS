@@ -80,3 +80,92 @@
         }
     }
 }
+
+//Introducción responsive
+@media (max-width: 1619px) {}
+
+@media (max-width: 1300px) {}
+
+@media (max-width: 1199px) {
+
+    .introduccion .introduccion-interior {
+        padding: 100px 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .introduccion {
+        margin-top: 0;
+    }
+
+    .banner_img {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .introduccion {
+        min-height: 300px;
+    }
+
+    .introduccion .introduccion-interior {
+        min-height: 300px;
+        padding-top: 200px;
+        padding-bottom: 50px;
+    }
+
+    .introduccion .introduccion-interior .introduccion-contenido {
+        margin-top: 0px;
+
+        .primary_btn {
+            display: none;
+        }
+    }
+
+    .introduccion .introduccion-interior .introduccion-contenido h3 {
+        font-size: 30px;
+    }
+
+    .introduccion .introduccion-interior .introduccion-contenido h3 span {
+        line-height: 45px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+}
+
+@media (max-width: 600px) {}
+
+@media (max-width: 575px) {
+    .introduccion {
+        min-height: 450px;
+    }
+
+    .introduccion .introduccion-interior {
+        min-height: 450px;
+    }
+
+    .introduccion .introduccion-interior .introduccion-contenido img {
+        display: none;
+    }
+
+    .introduccion .introduccion-interior .introduccion-contenido h5 {
+        margin-top: 0px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .introduccion .introduccion-interior .introduccion-contenido {
+        padding: 30px 15px;
+        margin-top: 0px;
+    }
+
+    .introduccion .introduccion-interior .introduccion-contenido h3 {
+        font-size: 24px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}

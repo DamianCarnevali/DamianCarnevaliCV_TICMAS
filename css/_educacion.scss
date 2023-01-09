@@ -1,0 +1,103 @@
+.educacion {
+    padding-bottom: 120px;
+
+    @media (max-width: 991px) {
+        padding-bottom: 50px;
+    }
+
+    .filters {
+        ul {
+            padding-left: 0;
+            margin-bottom: 50px;
+
+            @media (max-width: 991px) {
+                margin-bottom: 20px;
+            }
+
+            li {
+                display: inline-block;
+                margin-right: 50px;
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: #222222;
+                cursor: pointer;
+                @include transition();
+
+                &:hover,
+                &.active {
+                    color: $primary-color2;
+                }
+
+                @media (max-width: 767px) {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+.educacion_box {
+    margin-bottom: 80px;
+
+    @media (max-width: 767px) {
+        margin-bottom: 35px;
+    }
+
+    .short_info {
+        margin-top: 30px;
+
+        @media (max-width: 767px) {
+            margin-top: 20px;
+        }
+
+        h4 {
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-bottom: 0px;
+
+            a {
+                color: $title-color;
+            }
+        }
+    }
+}
+
+.sector_educacion_imagen {
+    position: relative;
+
+    .overlay {
+        @include transition();
+    }
+
+    .icon {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        @include transform(translate(-50%, -50%));
+        opacity: 0;
+        visibility: hidden;
+        @include transition();
+
+        span {
+            font-size: 100px;
+            display: inline-block;
+            @include transform(rotate(135deg));
+            color: #ffffff;
+            cursor: pointer;
+        }
+    }
+
+    &:hover {
+        .overlay {
+            background: rgba(77, 87, 222, 0.5);
+        }
+
+        .icon {
+            opacity: 1;
+            visibility: visible;
+            top: 50%;
+            left: 50%;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.agrupador_educacion_detalles {
+    .row {
+        margin-bottom: 65px;
+
+        @media (max-width: 480px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    p {
+        margin-bottom: 30px;
+        font-size: 14px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    .educacion_derecha {
+        margin-top: 50px;
+
+        h4 {
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+
+        p {
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+
+        .list {
+            li {
+                margin-bottom: 7px;
+
+                span {
+                    font-family: $title-font;
+                    color: #000000;
+                    font-size: 16px;
+                    font-weight: 500;
+                    width: 97px;
+                    display: inline-block;
+                }
+
+                font-weight: normal;
+                font-size: 14px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
