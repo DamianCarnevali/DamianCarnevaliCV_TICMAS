@@ -70,26 +70,4 @@
 			});
 		}
 	});
-	function experiencia_slider() {
-		if ($('.experiencia_slider').length) {
-			$('.experiencia_slider').owlCarousel({
-				loop: true,
-				margin: 30,
-				items: 2,
-				autoplay: true,
-				smartSpeed: 2500,
-				dots: true,
-				responsiveClass: true,
-				responsive: {
-					0: {
-						items: 1
-					},
-					991: {
-						items: 2
-					}
-				}
-			});
-		}
-	}
-	experiencia_slider();
 })(jQuery);
