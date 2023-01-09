@@ -463,7 +463,7 @@ a:focus {
   .introduccion .introduccion-interior .introduccion-contenido {
     margin-top: 0px;
   }
-  .introduccion .introduccion-interior .introduccion-contenido .primary_btn {
+  .introduccion .introduccion-interior .introduccion-contenido .tr-bg {
     display: none;
   }
   .introduccion .introduccion-interior .introduccion-contenido h3 {
