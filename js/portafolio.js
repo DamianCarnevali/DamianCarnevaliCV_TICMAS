@@ -7,11 +7,11 @@
 	const mediaQuery = window.matchMedia('(max-width: 992px)');
 
 	function agregarClase() {
-		header.classList.add('navbar_fixed');
+		header.classList.add('.navbar_fixed');
 		logo.src = './img/logo2.png';
 	}
 	function removerClase() {
-		header.classList.remove('navbar_fixed');
+		header.classList.remove(.'navbar_fixed');
 		logo.src = './img/logo.png';
 	}
 	window.addEventListener('resize', function () {
