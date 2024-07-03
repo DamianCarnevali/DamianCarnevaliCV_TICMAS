@@ -5,11 +5,11 @@
   const logo = document.querySelector('.logo-principal');
   const mediaQuery = window.matchMedia('(max-width: 992px)');
   function agregarClase() {
-    header.classList.add('.navbar_fixed');
+    header.classList.add('navbar_fixed');
     logo.src = './img/logo2.png';
   }
   function removerClase() {
-    header.classList.remove('.navbar_fixed');
+    header.classList.remove('navbar_fixed');
     logo.src = './img/logo.png';
   }
   window.addEventListener('resize', function () {
@@ -46,17 +46,9 @@
     }
   }
   servicios_slider();
+
+  
   $(window).on('load', function () {
-    $('.educacion-filter ul li').on('click', function () {
-      $('.educacion-filter ul li').removeClass('active');
-      $(this).addClass('active');
-
-      var data = $(this).attr('data-filter');
-      $workGrid.isotope({
-        filter: data,
-      });
-    });
-
     if (document.getElementById('educacionf')) {
       var $workGrid = $('.educaciong').isotope({
         itemSelector: '.all',
@@ -64,6 +56,16 @@
         masonry: {
           columnWidth: '.all',
         },
+      });
+
+      $('.educacion-filter ul li').on('click', function () {
+        $('.educacion-filter ul li').removeClass('active');
+        $(this).addClass('active');
+
+        var data = $(this).attr('data-filter');
+        $workGrid.isotope({
+          filter: data,
+        });
       });
     }
   });
