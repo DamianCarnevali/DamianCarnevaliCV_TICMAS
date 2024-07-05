@@ -121,6 +121,10 @@
     if (!valid) {
       alert(errorMessage);
       event.preventDefault();
+    } else {
+      errorMessage += 'Muchas gracias. Su mensaje ha sido enviado. \n';
+      this.reset();
+      alert(errorMessage);
     }
   });
   // Valida el mail al salir del input
