@@ -98,7 +98,6 @@
 
   // Formulario de contacto
   document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault(); //Previene la acción por defecto de enviar el formulario
     let valid = true;
     let errorMessage = '';
     const fields = ['nombre', 'email', 'asunto', 'mensaje'];
@@ -123,18 +122,7 @@
       event.preventDefault();
     } else {
       errorMessage += 'Muchas gracias. Su mensaje ha sido enviado. \n';
-      this.reset();
       alert(errorMessage);
-    }
-  });
-  // Valida el mail al salir del input
-  document.getElementsByName('email')[0].addEventListener('blur', function () {
-    const email = this.value.trim();
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (emailPattern.test(email)) {
-      this.setCustomValidity(''); // Elimina toda alerta anterior
-    } else {
-      this.setCustomValidity('Por favor, ingrese un correo electrónico válido.');
     }
   });
 })(jQuery);
